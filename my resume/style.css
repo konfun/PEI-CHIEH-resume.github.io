@@ -1,0 +1,283 @@
+/*-------------------Colors
+
+#2B2D42 - DARK BLUE
+#8D99AE - LIGHT BLUE
+#EDF2F4 - BLUE TO WHITE
+#EF233C - RED
+
+-------------------*/
+
+/*-------------------Global sytles--------------------*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; 
+}
+
+h1, h2 {
+    font-family: 'caveat', cursive;
+    font-weight: 400;
+}
+h1{
+    font-size: 80px;
+}
+h2{
+    font-size: 40px;
+    margin-top: 0;
+}
+h3{
+    margin:0;
+}
+
+
+/*-------------------Navigation--------------------*/
+
+nav {
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #2B2D42;
+}
+
+@media (min-width: 440px) {
+    nav a {
+        margin: 14px;
+        font-size: 16px;
+    }
+}
+
+/*-------------------Header only--------------------*/
+header{
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #2B2D42;
+    color: #8D99AE;
+}
+
+header h1, header h2 {
+    color: #EDF2F4;
+}
+
+h1{
+    margin: 0;
+}
+
+.content-wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 60px 50px;
+    max-width: 950px;
+    overflow: hidden;
+}
+
+@media (min-width: 935px) {
+    .content-wrap{
+        flex-direction: row;
+    }
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@media (min-width: 440px) {
+    .profile-img {
+        width: 200px; 
+        height: 200px;
+    }
+}
+
+@media (min-width: 935px) {
+    .profile-img {
+        width: 250px; 
+        height: 250px;
+    }
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #EF233C;
+    color: white;
+    padding: 0 5px 0 5px;
+}
+
+@media (min-width: 440px) {
+    .btn {
+        padding: 10px;
+    }
+}
+
+.download {
+    position: absolute; 
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/*------------------------Work-------------------------*/
+
+.work-exprience{
+    padding-top: 40px;
+    background-color: #EDF2F4;
+}
+
+.work-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
+
+.job-wrapper {
+    display: block;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 935px) {
+    .job-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 30px;
+    }
+}
+
+/*-----------------------------優化-----------------------------*/
+
+h3~p {
+    margin: 0;
+}
+
+
+
+@media (min-width: 935px) {
+    .job-description p:first-of-type{
+        margin-top: 0;
+    }
+}
+
+/*-----------------------------優化-----------------------------*/
+
+
+/*-------------------Education--------------------*/
+
+.education {
+    padding: 40px 0;
+    background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.7)), url(./asset/S__12247056.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.education-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
+
+.ul {
+    margin-top: 0;
+}
+
+
+
+/*-------------------Portfolio--------------------*/
+
+.Portfolio {
+    display: flex;
+    background-color:#EDF2F4;
+    justify-content: space-between;
+    vertical-align: top;
+    padding: 80px 200px 50px;
+}
+
+.Portfolio h100{
+    font-family: 'caveat', cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.Portfolio div {
+    width: 330px;
+    text-align: center;
+}
+
+.Portfolio img {
+    width: 330px;
+    height: 220pX;
+    border-radius: 10px;
+}
+
+.Portfolio p {
+    font-size: 12px;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1450px) {
+    .Portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Portfolio div {
+        margin-bottom: 30px;
+    }
+    .Portfolio img {
+        width: 100%;
+    }
+}
+
+/*-------------------Footer--------------------*/
+footer {
+    text-align: center;
+    background-color: #2B2D42;
+    color: #8D99AE;
+    font-size: 10px;
+}
+
+.contact-wrapper {
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 900px;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.media-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: #8D99AE solid 2px;
+}
+
+.media-pic:hover {
+    transform: scale(1.1);
+}
+
+.p+h3 {
+    margin-top: 30px;
+}
+
+.footer p {
+    padding: 0 5px 0 5px;
+    text-decoration: none;
+    color: white;
+}
