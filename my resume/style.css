@@ -84,7 +84,7 @@ h1{
     overflow: hidden;
 }
 
-@media (min-width: 935px) {
+@media (min-width: 768px) {
     .content-wrap{
         flex-direction: row;
     }
@@ -103,7 +103,7 @@ h1{
     }
 }
 
-@media (min-width: 935px) {
+@media (min-width: 768px) {
     .profile-img {
         width: 250px; 
         height: 250px;
@@ -150,7 +150,7 @@ h1{
     padding-bottom: 30px;
 }
 
-@media (min-width: 935px) {
+@media (min-width: 768px) {
     .job-wrapper{
         display: grid;
         grid-template-columns: 1fr 2.5fr;
@@ -166,7 +166,7 @@ h3~p {
 
 
 
-@media (min-width: 935px) {
+@media (min-width: 768px) {
     .job-description p:first-of-type{
         margin-top: 0;
     }
@@ -228,7 +228,7 @@ h3~p {
     text-align: justify;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 768px) {
     .Portfolio {
         flex-direction: column;
         align-items: center;
