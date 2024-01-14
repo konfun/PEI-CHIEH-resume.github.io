@@ -9,12 +9,12 @@
 
 /*-------------------Global sytles--------------------*/
 body{
-    font-family:sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0; 
 }
 
 h1, h2 {
-    font-family:cursive;
+    font-family: 'caveat';
     font-weight: 400;
 }
 h1{
