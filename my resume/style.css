@@ -18,7 +18,7 @@ h1, h2 {
     font-weight: 400;
 }
 h1{
-    font-size: 80px;
+    font-size: 60px;
 }
 h2{
     font-size: 40px;
@@ -31,41 +31,142 @@ h3{
 
 /*-------------------Navigation--------------------*/
 
-nav {
-    text-align: center;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    background-color: white;
-    top: 0;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-nav a {
-    display: inline-block;
-    margin: 5px;
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-weight: 700;
-    font-size: 11px;
-    text-transform: uppercase;
-    color: #2B2D42;
 }
 
-@media (min-width: 440px) {
-    nav a {
-        margin: 14px;
-        font-size: 16px;
+.navbar {
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    padding: 0px;
+    z-index: 1;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 60px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.nav-item {
+    font-size: 15px;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 7px;
+        left: 15px; 
+        
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        align-items: center;
+        padding: 22px;
+        background-color: #2B2D42;
+        z-index: 1;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 40px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #2B2D42;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
     }
 }
+
 
 /*-------------------Header only--------------------*/
 
 header{
     position: relative;
-    padding-top: 50px;
+    padding-top: 0px;
     text-align: center;
     background-color: #2B2D42;
     color: #8D99AE;
 }
+
+@media (max-width: 440px) {
+    header {
+        padding-top: 0;
+    }
+}
+
+
 
 header h1, header h2 {
     color: #EDF2F4;
@@ -116,6 +217,7 @@ h1{
     background-color: #EF233C;
     color: white;
     padding: 0 5px 0 5px;
+    z-index: 0;
 }
 
 @media (min-width: 440px) {
@@ -129,6 +231,12 @@ h1{
     z-index: 0;
     right: 0;
     bottom: 0;
+}
+
+@media (max-width: 440px) {
+    .download {
+        font-size: 20px;
+    }
 }
 
 
@@ -149,6 +257,13 @@ h1{
     display: block;
     padding-bottom: 30px;
 }
+
+.TECHNOLOGY {
+    color: #286fb6;
+}
+
+
+
 
 @media (min-width: 935px) {
     .job-wrapper{
@@ -200,7 +315,7 @@ h3~p {
     background-color:#EDF2F4;
     justify-content: space-between;
     vertical-align: top;
-    padding: 80px 150px 50px;
+    padding: 80px 150px 0px;
 }
 
 .Portfolio h100{
@@ -306,21 +421,20 @@ footer {
 
 .contact-wrapper {
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 20px 0 50px;
     max-width: 900px;
 }
 
 .contact-buttons {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .media-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: #8D99AE solid 2px;
+    width: 50px;
+    height: 50px;
 }
 
 .media-pic:hover {
@@ -331,8 +445,6 @@ footer {
     margin-top: 30px;
 }
 
-.footer p {
-    padding: 0 5px 0 5px;
-    text-decoration: none;
-    color: white;
+.mail {
+    margin-top: 7px;
 }
