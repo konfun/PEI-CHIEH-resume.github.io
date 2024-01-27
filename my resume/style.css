@@ -21,8 +21,8 @@ h1{
     font-size: 60px;
 }
 h2{
-    font-size: 40px;
-    margin-top: 0;
+    font-size: 35px;
+    margin: 0 0 15px;
 }
 h3{
     margin:0;
@@ -262,9 +262,6 @@ h1{
     color: #286fb6;
 }
 
-
-
-
 @media (min-width: 935px) {
     .job-wrapper{
         display: grid;
@@ -272,6 +269,7 @@ h1{
         column-gap: 30px;
     }
 }
+
 
 /*-----------------------------優化-----------------------------*/
 
@@ -308,6 +306,13 @@ h3~p {
     margin-top: 0;
 }
 
+@media (max-width: 440px) {
+    .education {
+        background-position: center;
+    }
+}
+
+
 /*----------------------------------------Portfolio-------------------------------------------------*/
 
 .Portfolio {
@@ -318,10 +323,11 @@ h3~p {
     padding: 80px 150px 80px;
 }
 
-.Portfolio h100{
+.Portfolio h6 {
     font-family: 'caveat', cursive;
-    font-weight: 400px;
+    font-weight: normal;
     font-size: 30px;
+    margin: 15px;
 }
 
 .Portfolio div {
@@ -331,7 +337,7 @@ h3~p {
 
 .Portfolio img {
     width: 330px;
-    height: 220pX;
+    height: 220px;
     border-radius: 10px;
 }
 
@@ -343,15 +349,10 @@ h3~p {
 
 
 @media screen and (max-width: 1400px) {
-    .Portfolio {
-        display: flex;
-        justify-content: space-between;
-        vertical-align: top;
-        padding: 80px 100px 80px;
-    }
-    .Portfolio h100{
+
+    .Portfolio h6{
         font-family: 'caveat', cursive;
-        font-weight: 350px;
+        font-weight: normal;
         font-size: 20px;
     }
     
@@ -362,18 +363,12 @@ h3~p {
     
     .Portfolio img {
         width: 270px;
-        height: 180pX;
+        height: 180px;
         border-radius: 10px;
-    }
-    
-    .Portfolio p {
-        font-size: 12px;
-        line-height: 1.6em;
-        text-align: justify;
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     .Portfolio {
         display: flex;
         flex-direction: column;
@@ -387,9 +382,9 @@ h3~p {
         width: 100%;
     }
 
-    .Portfolio h100{
+    .Portfolio h6{
         font-family: 'caveat', cursive;
-        font-weight: 400px;
+        font-weight: normal;
         font-size: 30px;
     }
     
@@ -400,19 +395,14 @@ h3~p {
     
     .Portfolio img {
         width: 330px;
-        height: 220pX;
+        height: 220px;
         border-radius: 10px;
-    }
-    
-    .Portfolio p {
-        font-size: 14px;
-        line-height: 1.6em;
-        text-align: justify;
     }
 }
 
 
 /*--------------------------------------------Footer---------------------------------------------------*/
+
 footer {
     text-align: center;
     background-color: #2B2D42;
